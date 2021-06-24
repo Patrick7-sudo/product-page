@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@1,800&display=swap');
+
+*{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    letter-spacing: 1.5px;
+    padding:2rem;
+    margin:0.5rem;
+}
+
+.navbar-container{
+    width:100vw;
+    height:100vh;
+}
+#navbar{
+    /* background-color: aquamarine; */
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    
+}
+
+#logo{
+    /* background-color: blue; */
+
+    padding-top:0.5rem;
+}
+
+.logo-options{
+    /* background-color: red; */
+    display: flex;
+    margin-right:1rem;
+}
+.logo-options a{
+    transition: 0.5s ease-out;
+}
+.logo-options a:hover{
+    color:wheat;
+    transition: 0.5s ease-out;
+}
+
+.hidden{
+    display: none;
+}
+
+.icon-button {
+    background-color: transparent;
+    font-size: 3rem;
+    margin: 2rem;
+    border:none;
+    transition: 0.5s ease-out;
+    display: none;
+    }
+
+
+
+@media screen and (max-width:990px){
+    .logo-options{
+        background-color: rgb(255,255,255);
+        flex-direction: column;
+        width:100%; 
+    }
+
+    .logo-options a:hover{
+        color:black;
+    }
+
+    .hover-small{
+        transition: 0.5s ease-out;
+    }
+    .hover-small:hover{
+        background-color: wheat;
+        transition: 0.5s ease-out;
+        color:black;
+    }
+
+    #navbar{
+        flex-direction: column;
+    }
+
+    .icon-button {
+    /* background-color: transparent;
+    font-size: 3rem;
+    margin: 2rem;
+    border:none;
+    transition: 0.5s ease-out; */
+    display: inline;
+    }
+
+    .icon-button:hover{
+        color: wheat;
+    }
+    #logo{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:0.5rem;  
+    }
+
+}
+
+/* End of navbar */
+
+/* headear */
+.header{
+    width:100%;
+    height:87%;
+    background-image: url(./pexels-ekaterina-bolovtsova-6311861.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+}
+#center-header{
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+}
+#tagline-center{
+    /* background-color: chartreuse; */
+    height:50%;
+    display: flex;
+    align-items: flex-end;
+
+
+}
+.tagline{
+    /* background-color: brown; */
+}
+#main-tag{
+    font-size:72px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin:1.5rem;
+}
+
+#desc-tag{
+    font-size: 32px;
+    text-align: center;
+    /* background-color: coral; */
+}
+
+.tag{
+    font-size:90px;
+    font-family: 'Be Vietnam', sans-serif;
+}
+.icon-down button{
+    background-color: transparent;
+    font-size:5rem;
+    margin:1rem;  
+    border:none; 
+    color:whitesmoke;
+    transition: 0.5s;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+button:hover{
+    color:black;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:990px){
+    #main-tag{
+        font-size:50px;
+        color:wheat;
+    }
+
+    #desc-tag{
+    font-size: 25px;
+    color:wheat;
+    }
+}
+
+@keyframes arrow {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+/* End of Header */
+
