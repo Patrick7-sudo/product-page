@@ -1,6 +1,7 @@
 const barBtn = document.querySelector('.icon-button');
 const options = document.querySelector('.logo-options');
 
+
 // window.addEventListener()
 
 barBtn.addEventListener('click',function(){
@@ -8,4 +9,6 @@ barBtn.addEventListener('click',function(){
         options.classList.remove('hidden')
     }else{options.classList.add('hidden')}
 })
-console.log(`hello`)
+
+
+

@@ -14,7 +14,10 @@ a{
 
 .navbar-container{
     width:100vw;
-    height:100vh;
+    height:auto;
+    position: fixed; 
+    z-index:1;
+    background-color: white;
 }
 #navbar{
     /* background-color: aquamarine; */
@@ -24,8 +27,8 @@ a{
     height:auto;
     
 }
-
-#logo{
+@media screen and (min-width:990px){}
+#header-img{
     /* background-color: blue; */
 
     padding-top:0.5rem;
@@ -35,6 +38,7 @@ a{
     /* background-color: red; */
     display: flex;
     margin-right:1rem;
+    /* display: inline-block; */
 }
 .logo-options a{
     transition: 0.5s ease-out;
@@ -60,10 +64,12 @@ a{
 
 
 @media screen and (max-width:990px){
+
     .logo-options{
-        background-color: rgb(255,255,255);
+        /* background-color: rgb(255,255,255); */
         flex-direction: column;
         width:100%; 
+        background-color: tomato;
     }
 
     .logo-options a:hover{
@@ -95,7 +101,7 @@ a{
     .icon-button:hover{
         color: wheat;
     }
-    #logo{
+    #header-img{
     /* background-color: pink; */
     display: flex;
     justify-content: space-between;
@@ -110,7 +116,7 @@ a{
 /* headear */
 .header{
     width:100%;
-    height:87%;
+    height:100vh;
     background-image: url(./pexels-ekaterina-bolovtsova-6311861.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,8 +125,10 @@ a{
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    position: relative;
     
 }
+
 #center-header{
     /* background-color: cadetblue; */
     display: flex;
@@ -158,9 +166,9 @@ a{
     font-size:90px;
     font-family: 'Be Vietnam', sans-serif;
 }
-.icon-down button{
+.icon-down a{
     background-color: transparent;
-    font-size:5rem;
+    font-size:60px;
     margin:1rem;  
     border:none; 
     color:whitesmoke;
@@ -176,6 +184,9 @@ button:hover{
 }
 
 @media screen and (max-width:990px){
+    .header{
+        /* position: relative; */
+    }
     #main-tag{
         font-size:50px;
         color:wheat;
@@ -203,4 +214,237 @@ button:hover{
 }
 
 /* End of Header */
+
+#Begining{
+    /* background-color: violet; */
+    width:100vw;
+    height: 100vh;
+}
+
+.beginning-center{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.title{
+    background-color: black;
+    padding-top:2rem; 
+    padding-bottom:2rem; 
+    font-size:32px;
+    text-align: center;
+    width:100%;
+    height: 10%;
+    color: white;
+    text-transform: capitalize;
+}
+
+#beginning-title{
+    border-bottom: solid 2px wheat;
+}
+
+.content-container{
+    /* background-color: yellowgreen; */
+    width:100%;
+    height:90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#story{
+    /* background-color: violet; */
+    width:45%;
+    height:90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    border-radius: 15px;
+}
+
+#sizing-font{
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+}
+
+#img-container{
+    width:45%;
+    height: 90%;
+    background-color: turquoise;
+    background-image: url(./pexels-ron-lach-8272392.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid black;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:990px){
+    .title{
+        background-color: wheat;
+    }
+    .content-container{
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    #img-container{
+        height: 45%;
+        width: 90%;
+        border:2px solid wheat;
+    }
+
+    #story{
+        height: 45%;
+        width: 90%;
+        border:2px solid wheat;
+    }
+
+    #sizing-font{
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    }
+
+    .tag{
+        font-size:30px;
+    }
+
+
+}
+
+/* end of beginning */
+
+/* process */
+    #process{
+        width:100vw;
+        height:100vh;
+        /* background-color: teal; */
+        display: flex;
+      
+    }
+    #stages{
+        width:100%;
+        height:90%;
+        /* background-color: yellowgreen; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stage{
+        width:auto;
+        height: auto;
+        /* background-color: violet; */
+        /* margin:1rem; */
+        padding:3rem;
+        border-top: 2px solid wheat;
+        /* border-bottom: 1px solid black; */
+        
+    }
+
+
+    
+
+    @media screen and (max-width:990px){
+        #process{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #stages{
+            width: 100%;
+            margin-top:1rem;
+        }
+    }
+/* End of process */
+
+/* Products */
+#products{
+    width:100vw;
+    height:100vh;
+}
+
+.product-content{
+    background-color: transparent;
+    height:85vh;
+}
+
+.product-container{
+    background-color: transparent;
+    width:25vw;
+    height: 50vh;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border-radius: 15px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+.product-container:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.product-img{
+    width:90%;
+    height:50%;
+    background-image: url(./product-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-info{
+    /* background-color: violet; */
+    text-align: center;
+    padding:0.7rem;
+}
+
+
+.buy-btn{
+    width:6.8rem;
+    height:1.8rem;
+    background-color: transparent;
+    border:2px solid black;
+    transition: 0.5s ease-out;
+}
+
+.buy-btn:hover{
+    background-color: wheat;
+    transition: 0.5s ease-out;
+}
+
+ @media screen and (max-width:990px){
+        .product-content{
+            height: auto;
+            /* background-color: turquoise;   */
+        }
+
+        .product-container{
+            width:90%;
+            padding-top:2rem;
+            padding-bottom:2rem;
+            border-color: wheat;
+        }
+
+        .product-img{
+            height: 100%;
+        }
+
+        .product-container:hover{
+            transform: scale(1);
+            
+        }
+    }
+/* End of Products */
 
